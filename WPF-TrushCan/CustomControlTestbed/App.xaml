@@ -1,8 +1,8 @@
-﻿<Application x:Class="FirstProject.App"
+﻿<Application x:Class="CustomControlTestbed.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:FirstProject"
->
+             xmlns:local="clr-namespace:CustomControlTestbed"
+             StartupUri="MainWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>
