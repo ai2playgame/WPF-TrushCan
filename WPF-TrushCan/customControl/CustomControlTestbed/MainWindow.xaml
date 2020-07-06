@@ -4,10 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CustomControlTestbed"
-        xmlns:custom="clr-namespace:CustomControls;assembly=CustomControls"
+        xmlns:custom="clr-namespace:CustomControlLib.Controls;assembly=CustomControlLib"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Margin="20">
-        <custom:LineGraph/>
+    <Grid>
+        <custom:LineGraph />
     </Grid>
 </Window>

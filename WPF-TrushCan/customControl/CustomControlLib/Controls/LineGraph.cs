@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
-namespace CustomControls
+namespace CustomControlLib.Controls
 {
-    class LineGraph : Control
+    public class LineGraph : Control
     {
         static LineGraph()
         {
@@ -15,7 +12,6 @@ namespace CustomControls
 
         public LineGraph()
         {
-
         }
     }
 }
