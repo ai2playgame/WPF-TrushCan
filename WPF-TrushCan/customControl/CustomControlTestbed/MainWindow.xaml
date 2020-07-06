@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <custom:LineGraph />
+        <custom:LineGraph SubText="Hero"/>
     </Grid>
 </Window>

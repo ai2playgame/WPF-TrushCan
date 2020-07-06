@@ -5,7 +5,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:LineGraph}">
-                    <TextBlock Text="LineGrah"/>
+                    <TextBlock Text="{TemplateBinding SubText}"/>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
