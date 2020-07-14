@@ -10,6 +10,9 @@ namespace CustomControlLib.Controls
             DefaultStyleKeyProperty.OverrideMetadata(typeof(LineGraph),
                 new FrameworkPropertyMetadata(typeof(LineGraph)));
         }
+        public LineGraph()
+        {
+        }
 
         // ---------------------------------------------------------------- //
         //  依存関係プロパティ
@@ -25,9 +28,5 @@ namespace CustomControlLib.Controls
                 typeof(string),
                 typeof(LineGraph),
                 new UIPropertyMetadata(null));
-
-        public LineGraph()
-        {
-        }
     }
 }
