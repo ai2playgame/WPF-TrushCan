@@ -12,19 +12,10 @@
         <vm:MainViewModel/>
     </Window.DataContext>
 
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="500"/>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-
-        <ListBox Grid.RowSpan="5" ItemsSource="{Binding People}" SelectionMode="Single">
+    <DockPanel>
+        <ListBox DockPanel.Dock="Left" Width="400"
+            ItemsSource="{Binding People}" SelectionMode="Single"
+            SelectedItem="{Binding Path=SelectedPerson}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <CheckBox Content="{Binding ModelDisplay}"/>
@@ -32,15 +23,51 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <Label Content="FirstName:" Grid.Row="0" Grid.Column="1"/>
-        <Label Content="SecondName:" Grid.Row="1" Grid.Column="1"/>
-        <TextBox Grid.Row="0" Grid.Column="2"
-            Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBox Grid.Row="1" Grid.Column="2" 
-            Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
-        <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
-            Content="Add Person" Command="{Binding AddPersonCommand}"/>
+        <StackPanel>
 
-    </Grid>
+            <Grid Background="LightGray" Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Add Person" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                <Label Content="FirstName:" Grid.Row="1" Grid.Column="0"/>
+                <TextBox Grid.Row="1" Grid.Column="2" Margin="3,3,6,3"
+                    Text="{Binding FirstName, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Content="LastName:" Grid.Row="2" Grid.Column="0"/>
+                <TextBox Grid.Row="2" Grid.Column="2" Margin="3,3,6,3"
+                    Text="{Binding LastName, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="10"
+                    Content="Add Person" Command="{Binding AddPersonCommand}"/>
+            </Grid>
+
+            <Grid Background="LightGray" Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Content="Selected Person Info" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
+                <Label Content="FirstName:" Grid.Row="1" Grid.Column="0"/>
+                <TextBox Grid.Row="1" Grid.Column="2" Margin="3,3,6,3"
+                    Text="{Binding SelectedPerson.FirstName, UpdateSourceTrigger=PropertyChanged}"/>
+                <Label Content="LastName:" Grid.Row="2" Grid.Column="0"/>
+                <TextBox Grid.Row="2" Grid.Column="2" Margin="3,3,6,3"
+                    Text="{Binding SelectedPerson.LastName, UpdateSourceTrigger=PropertyChanged}"/>
+            </Grid>
+        </StackPanel>
+    </DockPanel>
     
 </Window>

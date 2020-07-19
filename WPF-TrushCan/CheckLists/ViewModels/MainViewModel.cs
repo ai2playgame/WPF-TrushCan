@@ -19,6 +19,16 @@ namespace CheckLists.ViewModels
         // ListViewに入れるData
         public ObservableCollection<Person> People { get; set; } = new ObservableCollection<Person>();
 
+        private Person _selectedPerson;
+        public Person SelectedPerson
+        {
+            get => _selectedPerson;
+            set
+            {
+                SetProperty(ref _selectedPerson, value);
+            }
+        }
+
         public int IDCount { get; set; } = 0;
         private string _firstName;
         public string FirstName
@@ -49,7 +59,9 @@ namespace CheckLists.ViewModels
         // ---------------------------------------------------------------- //
         public MainViewModel()
         {
+            SelectedPerson = new Person();
             AddPersonCommand = new DelegateCommand(this.AddPerson, this.CanAddPerson);
+
             People.Add(new Person() { ID = IDCount, FirstName = "Adam", LastName = "Eevee" });
             IDCount++;
         }
