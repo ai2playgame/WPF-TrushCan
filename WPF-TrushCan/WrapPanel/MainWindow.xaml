@@ -1,0 +1,24 @@
+﻿<Window x:Class="WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WrapPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="500">
+    <!--StackPanelと違いウィンドウサイズに合わせて自動で整列してくれる-->
+    <WrapPanel Grid.Column="0" Orientation="Vertical">
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+        <Button Content="Button2" Width="80"/>
+    </WrapPanel>
+</Window>
