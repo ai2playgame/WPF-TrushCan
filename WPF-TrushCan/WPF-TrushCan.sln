@@ -32,6 +32,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanvasTest", "CanvasTest\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackPanelTest", "StackPanelTest\StackPanelTest.csproj", "{99559717-8B05-4F17-9730-EE12ACBDD220}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DockPanelTest", "DockPanel\DockPanelTest.csproj", "{301E689C-CEC1-450C-BD13-3AFE04A56CD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +76,10 @@ Global
 		{99559717-8B05-4F17-9730-EE12ACBDD220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99559717-8B05-4F17-9730-EE12ACBDD220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99559717-8B05-4F17-9730-EE12ACBDD220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{301E689C-CEC1-450C-BD13-3AFE04A56CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{301E689C-CEC1-450C-BD13-3AFE04A56CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{301E689C-CEC1-450C-BD13-3AFE04A56CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{301E689C-CEC1-450C-BD13-3AFE04A56CD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +92,7 @@ Global
 		{E6CB074A-F4C5-4DB7-BAB9-8291FD468A37} = {9F951E1F-BF19-424B-B178-38F01F4AA59F}
 		{05B6DE27-29C1-487F-A3BD-D961F3191AC2} = {174B68DD-407D-4B22-9D9B-8BB65EDE8CD4}
 		{99559717-8B05-4F17-9730-EE12ACBDD220} = {174B68DD-407D-4B22-9D9B-8BB65EDE8CD4}
+		{301E689C-CEC1-450C-BD13-3AFE04A56CD3} = {174B68DD-407D-4B22-9D9B-8BB65EDE8CD4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC8BBE98-30E2-4F43-A819-19D5E594B6FF}
