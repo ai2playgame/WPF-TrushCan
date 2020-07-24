@@ -41,6 +41,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp-Sample", "CSharp-Sam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIContainer-Test", "CSharp-Sample\DIContainer-Test\DIContainer-Test.csproj", "{05767388-3147-4603-8F4C-7E6C9EBB150C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prism-Intro", "Prism-Intro", "{E00FB05F-12EC-4017-A179-75577EA89D4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismFirstProject", "Prism-Intro\PrismFirstProject\PrismFirstProject.csproj", "{0B30BA32-AD88-4292-BDF0-279EEA043359}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,10 @@ Global
 		{05767388-3147-4603-8F4C-7E6C9EBB150C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05767388-3147-4603-8F4C-7E6C9EBB150C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05767388-3147-4603-8F4C-7E6C9EBB150C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B30BA32-AD88-4292-BDF0-279EEA043359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B30BA32-AD88-4292-BDF0-279EEA043359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B30BA32-AD88-4292-BDF0-279EEA043359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B30BA32-AD88-4292-BDF0-279EEA043359}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +125,7 @@ Global
 		{D498FCFD-DF28-4842-A2A3-ED8D819DC682} = {74D1F00C-37B4-4BD2-B4DA-34B6F937B4A3}
 		{E1746C6B-081E-40BB-865F-82EE12455103} = {59AEA3A2-1CD0-4EF7-B9E6-593B977B6F14}
 		{05767388-3147-4603-8F4C-7E6C9EBB150C} = {44E97A43-A57F-4D3D-B772-081EDBB9CA32}
+		{0B30BA32-AD88-4292-BDF0-279EEA043359} = {E00FB05F-12EC-4017-A179-75577EA89D4A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC8BBE98-30E2-4F43-A819-19D5E594B6FF}
