@@ -10,6 +10,7 @@
     <PackageReference Include="System.Runtime.Serialization.Xml" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\EditorView\EditorView.csproj" />
     <ProjectReference Include="..\NavigationTree\NavigationTree.csproj" />
     <ProjectReference Include="..\PrismPRJ02.Core\PrismPRJ02.Core.csproj" />
   </ItemGroup>

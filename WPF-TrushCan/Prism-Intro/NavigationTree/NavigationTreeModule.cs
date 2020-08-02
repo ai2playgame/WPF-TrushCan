@@ -1,6 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using PrismPRJ02.Core.Models;
 
 namespace NavigationTree
 {
@@ -15,7 +16,6 @@ namespace NavigationTree
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
         }
     }
 }

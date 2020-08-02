@@ -8,6 +8,8 @@ namespace PrismPRJ02
 {
     using Core.Models;
     using Core.Services;
+    using EditorView;
+
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
@@ -35,6 +37,7 @@ namespace PrismPRJ02
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)
         {
             moduleCatalog.AddModule<NavigationTreeModule>(InitializationMode.WhenAvailable);
+            moduleCatalog.AddModule<EditorViewModule>(InitializationMode.WhenAvailable);
         }
     }
 }

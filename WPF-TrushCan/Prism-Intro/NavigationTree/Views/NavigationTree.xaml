@@ -4,6 +4,7 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True"
              xmlns:vm="clr-namespace:NavigationTree.ViewModels"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              mc:Ignorable="d"
@@ -27,6 +28,14 @@
                     </StackPanel>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
+
+            <i:Interaction.Triggers>
+                <!--EventNameでハンドルしたいイベント名を指定する（今回はTreeViewからSelectedItemChangedイベントが発行される）-->
+                <i:EventTrigger EventName="SelectedItemChanged">
+                    <!--Command: イベントにバインドする、VMに定義したCommand名 TriggerParameterPath: ハンドルしたイベントのパラメータをVMに受け渡す-->
+                    <prism:InvokeCommandAction Command="{Binding SelectedItemChanged}" TriggerParameterPath="NewValue"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </TreeView>
 
     </Grid>
