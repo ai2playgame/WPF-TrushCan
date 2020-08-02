@@ -12,10 +12,19 @@
              <!--以上の4行を追加するとデザイナーのレイアウトが崩れない-->
     <Grid>
         <TreeView ItemsSource="{Binding TreeNodes}">
+            <TreeView.Resources>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded.Value, Mode=TwoWay}"/>
+                </Style>
+            </TreeView.Resources>
+
             <TreeView.ItemTemplate>
                 <HierarchicalDataTemplate DataType="{x:Type vm:TreeViewItemViewModel}"
                                           ItemsSource="{Binding Children}">
-                    <TextBlock Text="{Binding ItemText.Value}"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding ItemImage.Value}" Width="20" Height="20"/>
+                        <TextBlock Text="{Binding ItemText.Value}"/>
+                    </StackPanel>
                 </HierarchicalDataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>

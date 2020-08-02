@@ -29,12 +29,14 @@ namespace NavigationTree.ViewModels
         public NavigationTreeViewModel(WpfTestAppData testAppData)
         {
             this.appData = testAppData;
+
             // 木構造を作成
             this.rootNode = TreeViewItemCreator.Create(this.appData);
 
-            var col = new ObservableCollection<TreeViewItemViewModel>();
             // 木のルートをListに追加
+            var col = new ObservableCollection<TreeViewItemViewModel>();
             col.Add(this.rootNode);
+
             // ObservableCollectionをRx対応
             this.TreeNodes = col.ToReadOnlyReactiveCollection().AddTo(this.disposables);
         }

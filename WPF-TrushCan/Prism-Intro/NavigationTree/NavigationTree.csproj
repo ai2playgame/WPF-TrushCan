@@ -5,10 +5,37 @@
     <AssemblyName>NavigationTree</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Resources\heart.png" />
+    <None Remove="Resources\physical_folder.png" />
+    <None Remove="Resources\test.png" />
+    <None Remove="Resources\test_folder.png" />
+    <None Remove="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
     <PackageReference Include="Prism.Wpf" Version="7.2.0.1422" />
     <PackageReference Include="ReactiveProperty" Version="7.1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PrismPRJ02.Core\PrismPRJ02.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\test_folder.png" />
+    <Resource Include="Resources\physical_folder.png" />
+    <Resource Include="Resources\heart.png" />
+    <Resource Include="Resources\test.png" />
+    <Resource Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>
